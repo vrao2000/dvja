@@ -12,7 +12,7 @@ pipeline {
         sh "mvn clean package"
       }
     }
-    stage('Check dependencies') {
+    stage('Check  some dependencies') {
       steps {
         dependencyCheck additionalArguments: '', odcInstallation: 'Dependency-Check'
       }
