@@ -15,6 +15,7 @@ pipeline {
     stage('Check  some dependencies') {
       steps {
         dependencyCheck additionalArguments: '', odcInstallation: 'Dependency-Check'
+        dependencyCheckPublisher pattern: ''
       }
     }
 
